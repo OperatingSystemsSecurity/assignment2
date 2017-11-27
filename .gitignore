@@ -1,3 +1,9 @@
 /*s4549775.pdf
 /cr4/cr4
 /kernel_module/kernel_module
+/kernel_module/*.ko
+/kernel_module/*.mod.*
+/kernel_module/modules.order
+/kernel_module/Module.symvers
+/kernel_module/.*
+/kernel_module/*.o
