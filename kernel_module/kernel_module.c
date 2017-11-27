@@ -7,7 +7,9 @@ MODULE_AUTHOR("Hendrik Werner, Aniek Den Teuling");
 MODULE_DESCRIPTION("Access register CR4.");
 
 static int __init hello_init(void) {
-	printk(KERN_INFO "Hello world!\n");
+	unsigned long long result;
+	__asm__("movq %%cr4, %%rax\n" : "=a"(result));
+	printk(KERN_INFO "Value of CR4 = %llx\n", result);
 	return 0;
 }
 
