@@ -6,7 +6,7 @@ clean:
 	rm -f vulnerable
 
 disable-aslr:
-	echo 0 > /proc/sys/kernel/randomize_va_space
+	sudo tee /proc/sys/kernel/randomize_va_space <<< "0"
 
 %: %.c
 	$(CC) $(CFLAGS) -o $@ $<
