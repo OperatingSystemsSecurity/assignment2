@@ -7,3 +7,4 @@
 /kernel_module/Module.symvers
 /kernel_module/.*
 /kernel_module/*.o
+/rop/vulnerable
