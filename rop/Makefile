@@ -1,9 +1,9 @@
 CFLAGS = -fno-stack-protector
 
-all: vulnerable
+all: vulnerable vulnerable_small_buffer
 
 clean:
-	rm -f vulnerable
+	rm -f vulnerable vulnerable_small_buffer
 
 disable-aslr:
 	sudo tee /proc/sys/kernel/randomize_va_space <<< "0"
