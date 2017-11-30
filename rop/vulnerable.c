@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 	char name[256];
 	printf("%p\n", name);
 	puts("What’s your name?");
