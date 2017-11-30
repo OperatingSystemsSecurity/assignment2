@@ -8,3 +8,4 @@
 /kernel_module/.*
 /kernel_module/*.o
 /rop/vulnerable
+/rop/vulnerable_small_buffer
